@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    
+}
+
+.clear {
+    clear: left;
+}
+
+html{
+    scroll-behavior:auto;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width:50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+#header-nav{
+    display: inline-block;
+}
+#header-nav > li{
+    display: inline-block;
+      
+}
+
+#header-nav li{
+    position: relative;
+}
+
+#header-nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+#header-nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#header-nav > li:hover > a,
+#header .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+    display: block;
+}
+
+#header-nav .subnav {
+    display: none;
+    position: absolute;
+    list-style: none;
+    min-width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#header-nav .subnav li a{
+    background-color: #fff;
+    color: #000;
+    display: block;
+    padding: 0 12px;
+    line-height: 35px;
+    
+}
+
+#header-nav li:hover .subnav{
+    display: block;
+}
+
+.ti-angle-down{
+    font-size: 12px;
+}
+
+#header .ti-menu-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .ti-menu-button,
+#header .ti-search-button{
+    
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 46px;
+    font-weight: 600;
+}
+
+#header .ti-menu-button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .ti-search-button:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider{  
+    position: relative; 
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(https://www.w3schools.com/w3images/la.jpg) top center / cover no-repeat ;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 35px;
+}
+
+#slider .text-content h2{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#slider .text-content p{
+    font-size: 15px ;
+    font-weight: 600;
+}
+
+#content{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.first-content{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    color: #000;
+    line-height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+} 
+
+.first-content .first-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.first-content .first-discription{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.4;
+}
+
+.first-content .first-contents{
+    line-height: 20px;
+    text-align: justify;
+}
+
+.first-content .image{
+    width: 100%;
+    list-style: none;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.first-content .image img{
+    width:100%;
+    border-radius: 6px;
+}   
+
+.first-content .image p{
+    text-align: center;
+}
+
+#second-content{
+   
+    background-color: #000;
+    min-height: 500px;
+    padding-bottom: 80px;
+    padding-left: -16px;
+    padding-right: -16px;
+}
+
+#tour{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:64px ;
+    padding-bottom: 64px;
+    line-height: 50px;
+}
+
+#tour .second-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#tour .second-discription{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.4;
+}
+
+#tour .ticket-list{
+    background-color: #fff;
+    list-style: none;
+    border: 1px solid #fff;
+    color: #000;
+    
+}
+#tour .ticket-list{
+    margin-top: 40px;
+}
+
+#tour .ticket-list li{
+    border-bottom: 1px solid #ddd; 
+    padding: 6px 16px;
+    color:#666;
+}
+
+#tour .ticket-list .sold-out{   
+    background-color: #f44336;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#tour .ticket-list .number{
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.place img{
+    width: 100%;
+}
+
+.place img:hover{
+    opacity: 0.6;
+}
+.box-content{
+    margin-top: 35px;
+    margin-left: -8px;
+    margin-right: -8px; 
+}
+.content-body{
+    border:1px solid #fff;
+
+    background-color: #fff;
+    margin-top: -21px;
+    padding: 15px 20px;
+}
+
+.content-place{
+    color: #000;
+    font-weight: 600;
+}
+
+.content-time{
+    color: #000;
+    opacity: 0.6;
+}
+
+.content-discription{
+    color: #000;
+    line-height: 1.8;
+}
+
+.content-body .Btn{
+    padding: 8px 8px;
+    border: 0px solid #000;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-body .Btn:hover{
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+}
+
+.third-content{
+    margin-top: 100px;
+    width: 800px;
+    max-width: 100%;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color:#000
+}
+
+.third-heading{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.third-discription{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 35px;
+}
+
+.address-info i{
+    line-height: 1.8;
+    margin-right: 15px;
+}
+
+.name-info{
+    display: flex;
+    width: 100%;
+    
+}
+
+.name-info .form-control{
+    padding-right: 10px;
+    width: 50%;
+    margin-right: 8px;
+    
+}
+
+input.form-control {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.col.col-full {
+    width: 98%;
+}
+
+input[type="submit"] {
+    float: right;
+    margin-right: 9px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #fff;
+    color: #000;
+}
+
+#map img{
+    width: 100%;
+}
+
+
+#footer{
+    color: #000;
+    height: 100px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#footer p{
+    opacity: 0.7;
+}
+
+.modal{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    width: 900px;
+    max-width: calc(100%-24px);
+    min-height: 300px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    animation: modalLogin ease 1s   ;
+}
+
+.modal-header{
+    background-color: aqua;
+    height: 150px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header i{
+    margin-right: 14px;
+
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    opacity: 0.7;
+}
+
+
+.modal-close:hover{
+    opacity:1 ;
+    background-color: #f44336;
+}
+
+.modal-label{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    margin-bottom: 24px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.modal-body{
+    padding: 25px;
+}
+
+.buy-tickets{
+    border: none;
+    width: 100%;
+    padding: 16px;
+    background-color: aqua;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.buy-tickets:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+
+.modal-footer{
+    text-align: right;
+    padding: 16px;
+}
+
+@keyframes modalLogin{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+

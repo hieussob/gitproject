@@ -1,0 +1,18 @@
+@media (max-width:740px){
+    
+    #header-nav > li{
+        display: block;
+    }
+    #header .ti-search-button {
+        display: none;
+    }
+    #header-nav{
+        display: block;
+    }
+    #header .ti-menu-button{
+        display: block;
+    }
+
+    
+
+}
